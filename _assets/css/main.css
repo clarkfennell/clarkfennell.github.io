@@ -2339,6 +2339,7 @@ header {
   display: block;
   margin: 0;
   position: relative;
+  font-family: "Roboto-Regular";
 }
 
 header .menu__logo {
@@ -2499,6 +2500,7 @@ footer {
   color: #000;
   height: 13em;
   margin: auto;
+  font-family: "Roboto-Regular";
 }
 
 @media (max-width: 37.5em) {

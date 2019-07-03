@@ -6,6 +6,7 @@ footer {
   color: $black;
   height: 13em;
   margin: auto;
+  font-family: $ff-reg;
   @include respond($ls-mobile){ font-size: 0.75em; }
   li {
     list-style-type: none;
