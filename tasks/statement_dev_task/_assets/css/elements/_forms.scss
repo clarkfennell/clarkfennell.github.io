@@ -1,0 +1,4 @@
+input[type="text"] { -webkit-appearance: none; -moz-appearnace: none; -moz-appearance: none; appearance: none; background: $light-grey; border: none; font-family: $ff-light; color: $dark-grey; width: 17em; font-size: $fs-body*.6; font-family: $ff-h-reg; padding: 1.25em; float: left; }
+.quanity__num { border: solid 0.0125em $dark-grey; text-align: center; color: $dark-grey; background: $white; display: inline-block; margin: 0; width: 1.5em; height: 1.5em ; padding: 0; float: left;
+  @include respond($ls-mobile){ width: 5em; }
+}

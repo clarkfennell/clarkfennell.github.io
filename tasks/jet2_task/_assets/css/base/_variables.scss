@@ -1,0 +1,37 @@
+//Variables SCSS
+//Colours//
+$white: #fff;
+$off-white: #f2f2f2;
+$black: #000;
+$grey: #636f79;
+$dark-grey: #203240;
+$green: #248c09;
+$red: #ff0000;
+//Media Sizes//
+$desktop: 64em; //1024px
+$tablet: 48em; //769px
+$ls-mobile: 37.5em; //600px
+//Fonts Familys//
+@font-face {
+  font-family: "OpenSans-Light";
+  src: url("/tasks/jet2_task/_assets/fonts/Open_Sans/OpenSans-Light.eot?#iefix") format("eot"), url("/tasks/jet2_task/_assets/fonts/Open_Sans/OpenSans-Light.woff2") format("woff2"), url("/tasks/jet2_task/_assets/fonts/Open_Sans/OpenSans-Light.woff") format("woff"), url("/tasks/jet2_task/_assets/fonts/Open_Sans/OpenSans-Light.tff") format("truetype");
+}
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("/tasks/jet2_task/_assets/fonts/Open_Sans/OpenSans-Bold.eot?#iefix") format("eot"), url("/tasks/jet2_task/_assets/fonts/Open_Sans/OpenSans-Bold.woff2") format("woff2"), url("/tasks/jet2_task/_assets/fonts/Open_Sans/OpenSans-Bold.woff") format("woff"), url("/tasks/jet2_task/_assets/fonts/Open_Sans/OpenSans-Bold.tff") format("truetype");
+}
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("/tasks/jet2_task/_assets/fonts/Open_Sans/OpenSans-Regular.eot?#iefix") format("eot"), url("/tasks/jet2_task/_assets/fonts/Open_Sans/OpenSans-Regular.woff2") format("woff2"), url("/tasks/jet2_task/_assets/fonts/Open_Sans/OpenSans-Regular.woff") format("woff"), url("/tasks/jet2_task/_assets/fonts/Open_Sans/OpenSans-Regulartff") format("truetype");
+}
+//Font Variables//
+$ff-light: "OpenSans-Light";
+$ff-reg: "OpenSans-Regular";
+$ff-bold: "OpenSans-Bold";
+//Font Sizes//
+$fs-body: 0.9em;
+$fs-heading: 1.25em;
+//Spacing//
+$sml-pad: 1.5em;
+$pad: 3em;
+$big-pad: 4.5em;

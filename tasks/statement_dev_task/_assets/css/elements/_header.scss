@@ -1,0 +1,33 @@
+.discount {
+  p { font-size: $fs-body*0.6; font-family: $ff-light;letter-spacing: 0.015em; padding: 0.5em 0;  }
+}
+.account {
+  a { float: right; text-align: left; display: inline; padding: 1em; font-family: $ff-h-reg; font-size: $fs-body*.7;
+    @include respond($ls-mobile){ padding: 1em 0; }
+    svg { display: inline-block; margin: 0 0.5em; }
+  }
+}
+.main__logo {
+  img { height: 2em; width: 15em; display: inline-block; margin: auto;
+    @include respond($ls-mobile){ width: 7em; }
+  }
+}
+.grid {
+  &.three { padding: 1.5em 7em 0; width: 100%; text-align: center; height: 3em;
+    @include respond($ls-mobile){ padding: 0.5em 0; }
+    .item { @include respond($ls-mobile){ @include grid(3, 1.5%); }
+    }
+  }
+}
+.mobile__menu { display: none;
+  @include respond($ls-mobile){ display: inline-block;
+    svg { width: 1.5em !important; height: 1.5em; float:left; }
+  }
+}
+nav { text-align: center; width: 100%; display: block; margin: auto; max-width: 90em; padding-top: 2em;
+  ul { display: block; margin: auto; border-top: 0.0625em solid $light-grey; padding: 1em 0; font-family: $ff-h-reg; font-size: $fs-body*.7; }
+  li { padding: 0 1.5em; display: inline; }
+  a { color: $dark-grey; text-transform: uppercase; opacity: 0.8; }
+  a:hover { color: $red; -webkit-transition: all ease .6s; -o-transition: all ease .6s; transition: all ease .6s; }
+  .clearance { font-family: $ff-h-bold; color: $red; }
+}

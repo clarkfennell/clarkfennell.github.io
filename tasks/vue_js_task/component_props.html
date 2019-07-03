@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+<style>
+    [v-cloak] {
+        display: none;
+    }
+</style>
+
+<div id="app">
+    <div class="container">
+        <a-pod>
+          <h3 slot="title">#1</h3>
+          <p slot="caption">Here's Today's Astronomy picture of the day</p>
+        </a-pod>
+        <a-pod date="2018-08-07">
+          <h3 slot="title">#2</h3>
+          <p slot="caption" slot-scope="pic">Here's the picture from {{pic.date}}</p>
+        </a-pod>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+    Vue.component('a-pod', {
+      template: '<div> \
+                  <slot name="title"><h3>Untitled</h3></slot> \
+                  <img width="300 height="200" :src="imgSrc" :title="imgTitle"> \
+                  <slot name="caption" :date="date"><p>unkown date</p></slot> \
+                 </div>',
+      props: ['date'],
+      data: function() {
+        return {
+          imgSrc: '',
+          imgTitle: ''
+        }
+      },
+      created: function () {
+          this.fetchApod();
+      },
+      methods: {
+          fetchApod: function () {
+              var apiKey = 'lkgI9to0hRizfzk4xTAxtNTTFkkA4Mtq7y1yW5me';
+              var url = 'https://api.nasa.gov/planetary/apod?api_key=' + apiKey;
+              if (this.date) {
+                url += '&date=' + this.date;
+              }
+              var self = this;
+              axios.get(url)
+                  .then(function (res) {
+                      self.imgSrc = res.data.url;
+                      self.imgTitle = res.data.title;
+                  });
+          }
+      }
+    });
+
+    var vm = new Vue({
+        el: '#app'
+    });
+</script>

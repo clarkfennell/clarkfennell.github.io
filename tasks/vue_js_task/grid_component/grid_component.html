@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+
+<div id="app">
+    <div class="container">
+        <asteroid-grid @remove="remove" :asteroids="asteroids" header="Near-Earth Objects"></asteroid-grid>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="AsteroidGrid.js"></script>
+<script>
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            asteroids: []
+        },
+        created: function () {
+            this.fetchAsteroids();
+        },
+        methods: {
+            fetchAsteroids: function () {
+                var apiKey = 'lkgI9to0hRizfzk4xTAxtNTTFkkA4Mtq7y1yW5me';
+                var url = 'https://api.nasa.gov/neo/rest/v1/neo/browse?api_key=' + apiKey;
+                axios.get(url)
+                    .then(function (res) {
+                        vm.asteroids = res.data.near_earth_objects.slice(0, 10);
+                    });
+            },
+            remove: function (index) {
+                this.asteroids.splice(index, 1);
+            },
+        }
+    });
+</script>

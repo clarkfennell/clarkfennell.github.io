@@ -1,0 +1,363 @@
+<!-- This file would normal be index.php but Github dose not supoort PHP files at the moment. I will therefore put all of my PHP coding into comments as exmaples like this. -->
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<link rel="canonical" href="https://clarkfennell.github.io/tasks/statement_dev_task/">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="title" content="Statement Development Task">
+<meta name="description" content="This is a task set by Statment Development to show my Front-End Development skills.">
+<script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="/tasks/statement_dev_task/_assets/css/main.min.css">
+</head>
+<body>
+  <!-- Normally I would create the header in its own PHP file and import it via PHP with the follow code:
+  <?php echo file_get_contents('/_assets/php-includes/header.php'); ?> -->
+  <header>
+    <div class="dark_grey center discount">
+      <p>Spend over &pound;120 and get free delivery using the code <strong>FREEDELIVERY</strong> at the checkout!</p>
+    </div>
+    <div class="grid three">
+      <div class="mobile__menu item">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="item mob_hide">
+        <input type="text" placeholder="Search" />
+      </div>
+      <div class="item main__logo">
+        <img src="https://via.placeholder.com/100x100">
+      </div>
+      <div class="item account">
+        <div>
+          <a href="" title="Go to My Account"><span class="mob_hide">My Bag</span><i class="fas fa-shopping-bag"></i><span class="red__txt">(2)</span></a>
+          <a href="" title="Go to My Account"><span class="mob_hide">My Account</span><i class="far fa-user"></i></a>
+        </div>
+      </div>
+    </div>
+    <nav class="mob_hide">
+      <ul>
+        <li><a href="">New In</a></li>
+        <li><a href="">Jackets</a></li>
+        <li><a href="">Waitscoats</a></li>
+        <li><a href="">Formal Coats</a></li>          <li><a href="">Trousers</a></li>
+        <li><a href="">Suits</a></li>
+        <li><a href="" class="clearance">Clearance</a></li>
+        <li><a href="">Gallery</a></li>
+      </ul>
+    </nav>
+    <div class="grid red__bar">
+      <div class="item red center mob_hide">
+        <i class="fas fa-globe-europe"></i>
+        <span>Worldwide Shipping Avaiable</span>
+      </div>
+      <div class="item red center">
+        <i class="fas fa-truck"></i>
+        <span>FREE UK delivery on orders over &pound;120</span>
+      </div>
+      <div class="item red center mob_hide">
+        <i class="far fa-check-circle"></i>
+        <span>Secure Online Payments</span>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="row top__bar">
+      <div class="grey naviagtion__bar">
+        <a href=""><i class="fas fa-home"></i></a>
+        <img src="/tasks/statement_dev_task/_assets/core-images/icons/next.png" />
+        <a href="">Collections</a>
+        <img src="/tasks/statement_dev_task/_assets/core-images/icons/next.png" />
+        <a href="">Jackets</a>
+        <img src="/tasks/statement_dev_task/_assets/core-images/icons/next.png" />
+        <a href="" class="active">Mens Navy Tweed Jacket</a>
+      </div>
+      <div class="grid two">
+        <div class="item product__img">
+          <img src="/tasks/statement_dev_task/_assets/core-images/images/Tweed_navy_1.jpg" class="big__product"/>
+          <div class="product__nav">
+            <div class="inline">
+              <img src="/tasks/statement_dev_task/_assets/core-images/images/Tweed_navy_1.jpg" class="small__product" />
+            </div>
+            <div class="inline">
+              <img src="/tasks/statement_dev_task/_assets/core-images/images/Tweed_navy_2.jpg" class="small__product inline" />
+            </div>
+            <div class="inline">
+              <img src="/tasks/statement_dev_task/_assets/core-images/images/Tweed_navy_3.jpg" class="small__product inline" />
+            </div>
+            <div class="inline">
+              <img src="/tasks/statement_dev_task/_assets/core-images/images/Tweed_navy_4.jpg" class="small__product inline" />
+            </div>
+          </div>
+        </div>
+        <div class="item product__desc">
+          <div class="title">
+            <div class="product__name">
+              <h3 class="red__txt">Mens Navy Tweed Jacket</h3>
+              <span class="grey__txt">Hariss Tweed</span>
+            </div>
+            <div class="review">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <span class="red__txt">(27 Reviews)</span>
+            </div>
+          </div>
+          <div class="price">
+            <span class="red__txt inline">Sale &pound;229.00</span>
+            <span class="inline strikethrough">&pound;289.00</span>
+          </div>
+          <div class="limited">
+            <p><strong>Hurry!</strong> Limitied stock avaiable!</p>
+          </div>
+          <div class="product__row">
+            <div class="select__desc">
+              <span>Select Size:</span>
+              <span>Select Quanity:</span>
+            </div>
+            <div class="size__select">
+              <select>
+                <option value="0">Select Size</option>
+                <option value="1">36</option>
+                <option value="2">38</option>
+                <option value="3">40</option>
+                <option value="4">42</option>
+                <option value="5">44</option>
+              </select>
+              <i class="fas fa-angle-down"></i>
+            </div>
+            <div class="quanity">
+              <a class="btn dark_grey minus">
+                <i class="fas fa-angle-left"></i>
+              </a>
+              <input [type="text"] value="0" class="quanity__num" />
+              <a class="btn dark_grey plus">
+                <i class="fas fa-angle-right"></i>
+              </a>
+            </div>
+            <a href="" class="btn dark_grey right inline guide"><i class="fas fa-ruler"></i> View Sizes Guide</a>
+          </div>
+          <div class="product__row grey__line">
+            <a href="" class="btn red cart">Add To Bag</a>
+            <div class="box">
+              <i class="fas fa-heart"></i>
+            </div>
+            <div class="box">
+              <i class="fas fa-share-alt"></i>
+            </div>
+          </div>
+          <div class="product__row">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor velit eu laoreet pretium. Mauris lacinia nec ante sed pharetra. Phasellus sit amet suscipit justo. Nullam gravida eget dolor eu ultrices. Vivamus sed nunc nec orci iaculis lacinia id et magna. Nullam pulvinar luctus justo eu varius. Nulla facilisi. <a href="" class="link">Click Here</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="grid three info">
+        <div class="item info__product">
+          <a>Product Description</a>
+        </div>
+        <div class="item info__garment">
+          <a>Garment Care</a>
+        </div>
+        <div class="item info__delivery">
+          <a>Delivery &amp; Returns</a>
+        </div>
+      </div>
+      <div class="info__box">
+        <div class="product__text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla auctor turpis id aliquam. Fusce ullamcorper odio ipsum, molestie varius leo lobortis ut. Etiam congue egestas arcu, sit amet gravida lacus posuere at. Nulla facilisi. Mauris fermentum cursus risus eget bibendum. Cras ex tortor, suscipit sed neque id, vehicula dignissim turpis. Duis eros ipsum, ultricies id ligula non, blandit laoreet nibh. Donec ac vulputate felis, elementum porta eros. Maecenas nec feugiat lorem, eget vulputate magna. Curabitur dignissim, eros sit amet fringilla luctus, sapien odio laoreet est, a hendrerit leo risus sed nisi.</p>
+          <p>Sed eget quam et dolor hendrerit aliquam a vitae ex. Sed cursus purus quis odio tincidunt congue. Sed quis mi quis dolor pretium tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam lectus, ornare vel mauris sed, ullamcorper aliquam lorem. Donec gravida felis a neque gravida, ut consectetur purus tristique. Proin in turpis odio. Fusce nibh orci, molestie quis dignissim nec, vehicula malesuada velit. Curabitur ac turpis rutrum, tincidunt arcu ac, accumsan felis.</p>
+        </div>
+        <div class="garment__text hide">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla auctor turpis id aliquam. Fusce ullamcorper odio ipsum, molestie varius leo lobortis ut. Etiam congue egestas arcu, sit amet gravida lacus posuere at. Nulla facilisi. Mauris fermentum cursus risus eget bibendum. Cras ex tortor, suscipit sed neque id, vehicula dignissim turpis. Duis eros ipsum, ultricies id ligula non, blandit laoreet nibh. Donec ac vulputate felis, elementum porta eros. Maecenas nec feugiat lorem, eget vulputate magna. Curabitur dignissim, eros sit amet fringilla luctus, sapien odio laoreet est, a hendrerit leo risus sed nisi.</p>
+          <p>Sed eget quam et dolor hendrerit aliquam a vitae ex. Sed cursus purus quis odio tincidunt congue. Sed quis mi quis dolor pretium tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam lectus, ornare vel mauris sed, ullamcorper aliquam lorem. Donec gravida felis a neque gravida, ut consectetur purus tristique. Proin in turpis odio. Fusce nibh orci, molestie quis dignissim nec, vehicula malesuada velit. Curabitur ac turpis rutrum, tincidunt arcu ac, accumsan felis.</p>
+        </div>
+        <div class="delivery__text hide">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla auctor turpis id aliquam. Fusce ullamcorper odio ipsum, molestie varius leo lobortis ut. Etiam congue egestas arcu, sit amet gravida lacus posuere at. Nulla facilisi. Mauris fermentum cursus risus eget bibendum. Cras ex tortor, suscipit sed neque id, vehicula dignissim turpis. Duis eros ipsum, ultricies id ligula non, blandit laoreet nibh. Donec ac vulputate felis, elementum porta eros. Maecenas nec feugiat lorem, eget vulputate magna. Curabitur dignissim, eros sit amet fringilla luctus, sapien odio laoreet est, a hendrerit leo risus sed nisi.</p>
+          <p>Sed eget quam et dolor hendrerit aliquam a vitae ex. Sed cursus purus quis odio tincidunt congue. Sed quis mi quis dolor pretium tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quam lectus, ornare vel mauris sed, ullamcorper aliquam lorem. Donec gravida felis a neque gravida, ut consectetur purus tristique. Proin in turpis odio. Fusce nibh orci, molestie quis dignissim nec, vehicula malesuada velit. Curabitur ac turpis rutrum, tincidunt arcu ac, accumsan felis.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <h2 class="center">Complete The Outfit</h2>
+      <span class="underlined"></span>
+      <div class="grid two outfit">
+        <div class="item">
+          <div class="inner_left">
+            <img src="/tasks/statement_dev_task/_assets/core-images/images/tweed_grey_1.jpg" />
+          </div>
+          <div class="inner_right">
+            <h3>Mens Grey Tweed Waistcoat</h3>
+            <p>Harris Tweed</p>
+            <hr>
+            <span>&pound;110</span>
+            <a class="btn red">Add to Bag</a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="inner_left">
+            <img src="/tasks/statement_dev_task/_assets/core-images/images/Trousers_grey_1.jpg" />
+          </div>
+          <div class="inner_right">
+            <h3>Mens Grey Tweed Trousers</h3>
+            <p>Harris Tweed</p>
+            <hr>
+            <span>&pound;149</span>
+            <a class="btn red">Add to Bag</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row newsletter">
+      <div class="center">
+        <h3>Sign up to our newsletter</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam justo augue, placerat non varius vitae, feugiat sit amet justo. Nulla ornare iaculis justo, vel dictum velit convallis eget. Fusce vel lacinia justo. Proin quis odio a justo placerat gravida. Quisque elementum nibh scelerisque neque tincidunt accumsan. In iaculis fringilla efficitur.</p>
+        <input type="text" />
+        <input type="submit" class="btn red" />
+      </div>
+    </div>
+    <div class="row">
+      <h3>Recently Viewed</h3>
+      <span class="underlined"></span>
+      <div class="recent">
+        <div>
+          <img src="/tasks/statement_dev_task/_assets/core-images/images/Tweed_navy_1.jpg" />
+        </div>
+        <div>
+          <img src="/tasks/statement_dev_task/_assets/core-images/images/Tweed_navy_3.jpg" />
+        </div>
+        <div>
+          <img src="/tasks/statement_dev_task/_assets/core-images/images/Tweed_navy_4.jpg" />
+        </div>
+        <div>
+          <img src="/tasks/statement_dev_task/_assets/core-images/images/Tweed_navy_1.jpg" />
+        </div>
+        <div>
+          <img src="/tasks/statement_dev_task/_assets/core-images/images/Tweed_navy_3.jpg" />
+        </div>
+        <div>
+          <img src="/tasks/statement_dev_task/_assets/core-images/images/Tweed_navy_4.jpg" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <h3>Instagram</h3>
+      <span class="underlined"></span>
+      <!-- This would normally use a plugin which would link to the instgram account but for now I've just made a carousel to show the styling -->
+      <div class="instagram">
+        <div>
+          <img src="/tasks/statement_dev_task/_assets/core-images/images/instagram_1" />
+        </div>
+        <div>
+          <img src="/tasks/statement_dev_task/_assets/core-images/images/instagram_1" />
+        </div>
+        <div>
+          <img src="/tasks/statement_dev_task/_assets/core-images/images/instagram_1" />
+        </div>
+        <div>
+          <img src="/tasks/statement_dev_task/_assets/core-images/images/instagram_1" />
+        </div>
+        <div>
+          <img src="/tasks/statement_dev_task/_assets/core-images/images/instagram_1" />
+        </div>
+        <div>
+          <img src="/tasks/statement_dev_task/_assets/core-images/images/instagram_1" />
+        </div>
+        <div>
+          <img src="/tasks/statement_dev_task/_assets/core-images/images/instagram_1" />
+        </div>
+      </div>
+      <a href="https://www.instagram.com" class="btn dark_grey">Follow US</a>
+    </div>
+  </main>
+  <!-- Normally I would create the footer in its own PHP file and import it via PHP with the follow code:
+  <?php echo file_get_contents('/_assets/php-includes/footer.php'); ?> -->
+  <footer>
+    <div class="grid red__bar">
+      <div class="item red center mob_hide">
+        <i class="fas fa-globe-europe"></i>
+        <span>Worldwide Shipping Avaiable</span>
+      </div>
+      <div class="item red center">
+        <i class="fas fa-truck"></i>
+        <span>FREE UK delivery on orders over &pound;120</span>
+      </div>
+      <div class="item red center mob_hide">
+        <i class="far fa-check-circle"></i>
+        <span>Secure Online Payments</span>
+      </div>
+    </div>
+    <div class="grid five">
+      <div class="item">
+        <span>Contact Us</span>
+        <ul>
+          <li><a href="mailto:hello@companyname.com">hello@companyname.com</a></li>
+          <li><a href="tel:+441234567890"> +44 (0) 1234 567 890</a></li>
+          <li><a href="">Press Area</a></li>
+        </ul>
+      </div>
+      <div class="item">
+        <span>About</span>
+        <ul>
+          <li><a href="">Company</a></li>
+          <li><a href="">Carrers</a></li>
+          <li><a href="">Charity</a></li>
+          <li><a href="">Corporate Responsibility</a></li>
+        </ul>
+      </div>
+      <div class="item">
+        <span>Delivery &amp; Returns</span>
+          <ul>
+            <li><a href="">Delivery</a></li>
+            <li><a href="">Returns</a></li>
+            <li><a href="">2 Year Warrenty</a></li>
+            <li><a href="">30 Day Money Back Guarantee</a></li>
+          </ul>
+      </div>
+      <div class="item">
+        <span>Information</span>
+        <ul>
+          <li><a href="">Terms &amp; Conditions</a></li>
+          <li><a href="">Privacy Policy</a></li>
+          <li><a href="">Cookies Policy</a></li>
+          <li><a href="">Manage Cookies</a></li>
+          <li><a href="">Site Map</a></li>
+        </ul>
+      </div>
+      <div class="item mob_hide">
+        <span>Help</span>
+        <ul>
+          <li><a href="">FAQ</a></li>
+          <li><a href="">Payment &amp; Security</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="grid three">
+      <div class="item">
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-pinterest-p"></i>
+      </div>
+      <div class="item">
+        <img src="https://via.placeholder.com/100x100" />
+      </div>
+      <div class="item">
+        <i class="fab fa-cc-apple-pay"></i>
+        <i class="fab fa-cc-amazon-pay"></i>
+        <i class="fab fa-cc-mastercard"></i>
+        <i class="fab fa-cc-paypal"></i>
+        <i class="fab fa-cc-visa"></i>
+      </div>
+    </div>
+    <div class="small__txt">
+      <span>Company Name 2013-2018|Company Regisitration No:0123456|VAT Regisitered 012 345 678</span>
+    </div>
+  </footer>
+  <!-- Normally I would create the Plugin links in there own PHP file and import it via PHP with the follow code:
+  <?php echo file_get_contents('/_assets/php-includes/plugins.php'); ?> -->
+  <script type="text/javascript" src="/tasks/statement_dev_task/_assets/scripts/js/jquery-3.4.0.min.js"></script>
+  <script type="text/javascript" src="/tasks/statement_dev_task/_assets/scripts/js/main.js"></script>
+</body>
+</html>

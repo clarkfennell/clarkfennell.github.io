@@ -1,0 +1,39 @@
+/* Mixins SCSS */
+// Shorthand for v:top and inline-block
+@mixin vi { display:inline-block; vertical-align: top; }
+
+// Used to making elements max width on mobile / tablet
+@mixin max { width:100% !important; max-width: 100%; margin-left:0 !important; margin-right:0 !important; }
+
+// Responsive query accepting 1 or 2 breakpoints
+@mixin respond($breakpoints...) {
+    @if length($breakpoints) == 1 {
+        @media (max-width: nth($breakpoints,1)) {
+            @content;
+        }
+    } @else {
+        @media (min-width: nth($breakpoints,1)) and (max-width: nth($breakpoints,2)) {
+            @content;
+        }
+    }
+}
+// Creates an equal grid based on quantity and a % margin
+@mixin grid($qty,$margin) {
+   width: ((100% - (($qty - 1) * $margin)) / $qty);
+   &:nth-child(n) {
+       margin-right:$margin;
+   }
+   &:nth-child(#{$qty}n) {
+       margin-right:0;
+   }
+}
+// Clear fix when using floats
+@mixin clearfix {
+	&:before, &:after {
+		content: "";
+		display: table;
+    }
+	&:after {
+		clear: both;
+	}
+}

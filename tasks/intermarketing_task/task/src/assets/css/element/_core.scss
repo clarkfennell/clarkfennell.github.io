@@ -1,0 +1,7 @@
+html, body { font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif; font-size: $fs-body; padding-top: 10vh; }
+#app { display: block; margin: 0 auto; max-width: 23em; width: 100%; text-align: center; font-size: $fs-body; letter-spacing: 0.05em; }
+.btn { border: solid $light-grey 0.075em; border-radius: 0.25em; color: $dark-grey; font-size: 1em; display: inline-block; background: $white; margin: 1em 0; padding: 0.5em 0.8em; width: 42%; font-weight: bold; letter-spacing: 0.05em; padding-top: 1em; padding-bottom: 1em;
+    &.green { background: $green; color: $white; }
+}
+.btn:first-of-type { float: left; }
+.btn:last-of-type { float: right; }

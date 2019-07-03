@@ -1,0 +1,61 @@
+/* Variables Document */
+//Colours
+$white: #fff;
+$black: #000;
+$light-grey: #f1f1f1;
+$dark-grey: #333333;
+$red: #a01818;
+$yellow: #ecda8c;
+
+//Screen Sizes
+$mobile: 26.57em; //425px
+$ls-mobile: 37.5em; //600px
+$tablet: 48em; //768px
+$ls-tablet: 64em; //1024px
+$laptop: 90em; //1440px
+// Fonts
+@font-face {
+  font-family: "Lora-Bold";
+  src: url("/tasks/statement_dev_task/_assets/fonts/Lora/Lora-Bold.eot?#iefix") format("eot"), url("/tasks/statement_dev_task/_assets/fonts/Lora/Lora-Bold.woff2") format("woff2"), url("/tasks/statement_dev_task/_assets/fonts/Lora/Lora-Bold.woff") format("woff"), url("/tasks/statement_dev_task/_assets/fonts/Lora/Lora-Bold.tff") format("truetype");
+}
+@font-face {
+  font-family: "Lora-Regular";
+  src: url("/tasks/statement_dev_task/_assets/fonts/Lora/Lora-Light.eot?#iefix") format("eot"), url("/tasks/statement_dev_task/_assets/fonts/Lora/Lora-Regular.woff2") format("woff2"), url("/tasks/statement_dev_task/_assets/fonts/Lora/Lora-Regular.woff") format("woff"), url("/tasks/statement_dev_task/_assets/fonts/Lora/Lora-Regular.tff") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("/_assets/fonts/Roboto/Roboto-Regular.eot?#iefix") format("eot"), url("/_assets/fonts/Roboto/Roboto-Regular.woff2") format("woff2"), url("/_assets/fonts/Roboto/Roboto-Regular.woff") format("woff"), url("/_assets/fonts/Roboto/Roboto-Regular.tff") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("/_assets/fonts/Roboto/Roboto-Bold.eot?#iefix") format("eot"), url("/_assets/fonts/Roboto/Roboto-Bold.woff2") format("woff2"), url("/_assets/fonts/Roboto/Roboto-Bold.woff") format("woff"), url("/_assets/fonts/Roboto/Roboto-Bold.tff") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Black";
+  src: url("/_assets/fonts/Roboto/Roboto-Black.eot?#iefix") format("eot"), url("/_assets/fonts/Roboto/Roboto-Black.woff2") format("woff2"), url("/_assets/fonts/Roboto/Roboto-Black.woff") format("woff"), url("/_assets/fonts/Roboto/Roboto-Black.tff") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("/_assets/fonts/Roboto/Roboto-Light.eot?#iefix") format("eot"), url("/_assets/fonts/Roboto/Roboto-Light.woff2") format("woff2"), url("/_assets/fonts/Roboto/Roboto-Light.woff") format("woff"), url("/_assets/fonts/Roboto/Roboto-Light.tff") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("/_assets/fonts/Roboto/Roboto-Medium.eot?#iefix") format("eot"), url("/_assets/fonts/Roboto/Roboto-Medium.woff2") format("woff2"), url("/_assets/fonts/Roboto/Roboto-Medium.woff") format("woff"), url("/_assets/fonts/Roboto/Roboto-Medium.tff") format("truetype");
+}
+//Font Variables
+$ff-h-reg: "Lora-Regular";
+$ff-h-bold: "Lora-Bold";
+$ff-light: "Roboto-Light";
+$ff-reg: "Roboto-Regular";
+$ff-black: "Roboto-Black";
+$ff-bold: "Roboto-Bold";
+$ff-med: "Roboto-Medium";
+//Font-Sizes
+$fs-body: 1em;
+$fs-small: 1.35em;
+$fs-reg: 1.75em;
+$fs-large: 2.8125em;
+$fs-head: 3.75em;
+//Padding & Margin Variables
+$sml-pad: 2.5em;
+$big-pad: 5em;

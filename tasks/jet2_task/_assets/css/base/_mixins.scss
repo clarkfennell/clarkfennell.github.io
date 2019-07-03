@@ -1,0 +1,13 @@
+//Mixins SCSS
+// Responsive query accepting 1 or 2 breakpoints
+@mixin respond($breakpoints...) {
+    @if length($breakpoints) == 1 {
+        @media (min-width: nth($breakpoints,1)) {
+            @content;
+        }
+    } @else {
+        @media (min-width: nth($breakpoints,1)) and (max-width: nth($breakpoints,2)) {
+            @content;
+        }
+    }
+}

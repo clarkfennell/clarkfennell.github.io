@@ -1,0 +1,14 @@
+footer { font-family: $ff-h-reg; font-size: $fs-body*.75;
+  .small__txt { font-size: 0.5em; text-align: center; padding: 1em; }
+  .grid {
+    &.five { height: 15em; padding: 2em 3em; margin: auto; max-width: 90em; }
+    &.three { height: 3em; overflow: hidden;
+      .item {
+        @include respond($ls-mobile){ @include grid(1,0%); text-align: center; }
+        img { height: 3em; width: 12em; }
+      }
+    }
+    span { colr: $dark-grey; font-family: $ff-h-bold; text-transform: uppercase; padding-bottom: 1.5em; display: block; margin: auto; }
+    li { font-family: $ff-light; color: $dark-grey; display: block; margin: auto; }
+  }
+}

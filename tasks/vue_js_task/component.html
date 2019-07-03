@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<div id="app">
+    <div class="container">
+      <another-component></another-component>
+      <my-component v-for="i in 1000"></my-component>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+<script>
+    var anotherComponent = {
+      data: function () {
+        return {
+          msg: "Hello from another component!"
+        }
+      },
+      template: '<h1>{{msg}}</h1>'
+    };
+
+    Vue.component('my-component', {
+      template: '<strong>A static elemnt...</strong>'
+    });
+
+    var vm = new Vue({
+        el: '#app',
+        components: {
+          'another-component': anotherComponent
+        }
+    });
+</script>

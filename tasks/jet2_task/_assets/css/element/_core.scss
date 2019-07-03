@@ -1,0 +1,18 @@
+//Core SCSS
+//Base//
+html { -webkit-box-sizing: border-box; box-sizing: border-box; width: 100%; max-width: 100%; min-height: 100%; background-color: $grey; color: $black; -webkit-appearance: none; -moz-appearance: none; appearance: none; letter-spacing: -0.05em; }
+html * { -webkit-box-sizing: inherit; box-sizing: inherit; outline: none; }
+body { max-width: 100%; width: 100%; font-size: 100%; }
+svg { height: 1.5em; width: 1.5em; }
+p { line-height: 135%; font-size: $fs-body; display: inline-block; vertical-align: top; width: 100%; font-family: $ff-light; }
+a { outline: none; text-decoration: none; color: inherit; cursor: pointer; font-style: italic; font-family: $ff-bold; font-size: $fs-body; }
+h1, h2 { font-size: $fs-heading; line-height: 115%; font-family: $ff-bold; }
+//Structure//
+main { position: relative; display: block; }
+//Colour//
+.grey { background: $grey; color: $black; }
+.white { background: $white; color: $black; }
+.off__white { background: $off-white; color: $black; }
+.black { background: $black; color: $white; }
+.dark__grey { background: $dark-grey; color: $white; }
+.dark__grey--text { color: $dark-grey; }
