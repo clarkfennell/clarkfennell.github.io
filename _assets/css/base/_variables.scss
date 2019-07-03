@@ -1,0 +1,47 @@
+/* Variables Document */
+//Colours
+$white: #fff;
+$black: #000;
+$grey: #d7d7d7;
+$shadows: #ada9b7 ;
+$yellow: #d3d009;
+$red: #d84144;
+$silver: #c4aeb7;
+$green: #87bba2;
+$blue: #586994;
+//Screen Sizes
+$ls-mobile: 37.5em; //600px
+$tablet: 48em; //768px
+$ls-tablet: 64em; //1024px
+$laptop: 90em; //1440px
+//Font-Sizes
+$fs-body: 1em;
+$fs-small: 1.35em;
+$fs-reg: 1.75em;
+$fs-large: 2.8125em;
+$fs-head: 3.75em;
+//Fonts
+@font-face {
+  font-family: "Comfortaa-Bold";
+  src: url("/fonts/Comfortaa/Comfortaa-Bold.eot?#iefix") format("eot"), url("/fonts/Comfortaa/Comfortaa-Bold.woff2") format("woff2"), url("/fonts/Comfortaa/Comfortaa-Bold.woff") format("woff"), url("/fonts/Comfortaa/Comfortaa-Bold.tff") format("truetype");
+}
+@font-face {
+  font-family: "Comfortaa-Regular";
+  src: url("/fonts/Comfortaa/Comfortaa-Regular.eot?#iefix") format("eot"), url("/fonts/Comfortaa/Comfortaa-Regular.woff2") format("woff2"), url("/fonts/Comfortaa/Comfortaa-Regular.woff") format("woff"), url("/fonts/Comfortaa/Comfortaa-Regular.tff") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("/fonts/Roboto/Roboto-Bold.eot?#iefix") format("eot"), url("/fonts/Roboto/Roboto-Bold.woff2") format("woff2"), url("/fonts/Roboto/Roboto-Bold.woff") format("woff"), url("/fonts/Roboto/Roboto-Bold.tff") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("/fonts/Roboto/Roboto-Regular.eot?#iefix") format("eot"), url("/fonts/Roboto/Roboto-Regular.woff2") format("woff2"), url("/fonts/Roboto/Roboto-Regular.woff") format("woff"), url("/fonts/Roboto/Roboto-Regular.tff") format("truetype");
+}
+//Font Variables
+$ff-h-reg: "Comfortaa-Regular";
+$ff-h-bold: "Comfortaa-Bold";
+$ff-bold: "Roboto-Bold";
+$ff-reg: "";
+//Padding
+$sml-pad: 2.5em;
+$big-pad: 5em;

@@ -1,0 +1,53 @@
+footer {
+  display: block;
+  width: 70%;
+  position: relative;
+  border-top: 0.075em solid $shadows;
+  color: $black;
+  height: 13em;
+  margin: auto;
+  @include respond($ls-mobile){ font-size: 0.75em; }
+  li {
+    list-style-type: none;
+  }
+  span { color: $silver; text-decoration: underline; padding-bottom: 0.5em; }
+  .grid {
+    height: 8em !important;
+    margin: 1.5em auto auto !important;
+    &.ftr__two{
+      .item { height: auto; @include grid(2, 2.5%); float: left; display:inline-block; }
+    }
+  }
+  .contact_ftr{
+    a {
+      display: block;
+      padding-bottom: 1em;
+      img {
+        width: 1em !important;
+        height: 1em !important;
+        display: unset !important;
+      }
+    }
+    a:nth-child(n+3){
+      display: inline;
+    }
+  }
+  .policy_ftr {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+    height: 2.5em;
+    li {
+      list-style: none;
+      display: inline;
+      padding-right: 5em;
+      font-size: 0.65em;
+      @include respond($ls-mobile){
+        padding-right: 2em;
+      }
+    }
+  }
+}

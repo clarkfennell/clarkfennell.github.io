@@ -1,0 +1,167 @@
+html {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  background-color: $white;
+  color: $black;
+  overflow-x: hidden;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  transition: all ease 3s;
+}
+  html * {
+    box-sizing: inherit;
+    outline: none; }
+
+body {
+  max-width: 100%;
+  width: 100%;
+  font-size: 100%;
+  position: relative;
+  overflow-x: hidden;
+  font-family: $fs-reg;
+}
+  body.frame {
+    padding-top: 0; }
+
+svg {
+  height: 1em;
+  width: 1em; }
+
+ul {
+  list-style: none; }
+
+ol {
+  list-style: decimal;
+  padding-left: 1em; }
+
+p, q {
+  line-height: 135%;
+  font-size: 1em;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%; }
+  @include respond($ls-mobile) {
+    p, q {
+      font-size: .875em; } }
+  p + p, q + p {
+    margin-top: 1.25em; }
+  p ul, p ol, p li, p p, p a, q ul, q ol, q li, q p, q a {
+    font-size: $fs-body; }
+  p a, q a {
+    font-weight: 400; }
+  p + .grid, q + .grid {
+    margin-top: 3.125em; }
+
+li {
+  margin-top: 0;
+  line-height: 145%; }
+  li + li {
+    margin-top: 0em; }
+
+button {
+  cursor: pointer; }
+
+label {
+  cursor: pointer;
+  line-height: 125%; }
+
+a {
+  outline: none;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer; }
+
+img {
+  display: inline-block;
+  vertical-align: top;
+  object-fit: cover;
+  object-position: center;
+}
+
+em {
+  font-style: italic; }
+
+strong, b {
+  font-family: $ff-bold; }
+
+address {
+  font-style: normal; }
+
+h1 {
+  font-size: $fs-head;
+  font-family: $ff-h-bold;
+  margin: 0 0 .5em;
+  line-height: 115%;
+  font-weight: normal; }
+  @include respond($ls-mobile) {
+    h1 {
+      font-size: $fs-large*1.25; } }
+  @include respond($ls-mobile) {
+    h1 {
+      font-size: $fs-large; } }
+
+h2 {
+  font-size: $fs-large;
+  font-family: $ff-h-bold;
+  margin: 0 0 .25em;
+  line-height: 115%;
+  font-weight: normal;
+  @include respond($tablet) {
+    font-size: $fs-small; }
+}
+
+h3, h4, h5, h6 {
+  font-size: $fs-reg;
+  font-family: $ff-h-bold;
+  margin: 0 0 .25em;
+  line-height: 115%;
+  font-weight: normal; }
+  @include respond($ls-mobile) {
+    h3, h4, h5, h6 {
+      font-size: $fs-small; } }
+
+main { display: inline-block; width: 100%; vertical-align: top; height: auto; margin: 0 auto; padding: $big-pad $sml-pad; }
+.left { float: left; }
+.right { float: right; }
+.overflow-y { overflow-y: hidden; }
+.center { text-align: center; }
+.right-text { text-align: right; }
+.absolute { position: absolute; top: 0; left:0 }
+.relative { position: relative; }
+.block { display: block; }
+.inline { display: inline-block; }
+.hide { display: none !important; }
+.show { display: block !important; }
+.sml-pad-ends { padding: $sml-pad; }
+.sml-pad-sides { padding: $sml-pad; }
+.pad-ends { padding: $big-pad; }
+.pad-sides { padding: $big-pad; }
+.sml-pad-bot { padding-bottom: $sml-pad;
+  @include respond($ls-mobile){ padding: 0; }
+}
+.pad-bot { padding-bottom: $big-pad;
+  @include respond($ls-mobile){
+    padding-bottom: 3em;
+  }
+}
+.site { width: 100%; max-width: 90em; display: block; height: 100%; margin: auto; }
+.grid { display: block; height: auto; width: 100%;
+  img { width: 100%; height: auto; display: block; margin: auto;}
+  &.four { margin: 1em auto;
+    .item { height: auto; @include grid(4, 2.5%); float: left; display:inline-block; margin: 1em auto;
+      @include respond($tablet){ @include grid(2, 2.5%); }
+      @include respond($ls-mobile){ @include grid(1, 0%); }
+    }
+  }
+  &.two {
+    .item { height: auto; @include grid(2, 2.5%); float: left; display:inline-block;
+      @include respond($ls-mobile){
+        @include grid(1, 0%);
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+header { width: 100%; display: block; margin: 0; position:relative;
+  .menu__logo { background-color: $grey; width: 10em; height: auto; display: block; border-radius: 50%; margin: 1em auto;
+    img { height: 10em; width: 10em; display: block; }
+  }
+  .nav { width: 70%; margin: auto; text-align: center; border-bottom: $shadows 0.075em solid; padding-bottom: 0.5em;
+    @include respond($ls-mobile){ display: none; }
+    li { display: inline; padding: 0 0.5em; }
+    li:hover { border-bottom: 0.0125em solid $black; }
+    a:hover { color: $blue; transition: all ease .6s; text-decoration: none; font-weight: bolder; }
+    @include respond($ls-mobile) {
+      li { display: block; padding: 0.5em; font-size: $fs-small; }
+    }
+  }
+  .dropdown__nav { background-color: $blue; position: absolute; top: 100%; right: 2em; width: 13em;
+    ul { list-style-type: none; float: left; }
+    li { display: block; }
+    a { color: $white; }
+    a:hover { color: $silver; }
+  }
+  .menu__contact { margin: 0.5em auto; text-align: center;
+    @include respond($ls-mobile){ display: none; };
+    img { height: 2em; width: 2em; margin: 0 0.5em; display: inline; }
+  }
+  .hamburger { display: none;
+    @include respond($ls-mobile){ display: block; margin: auto; }
+  }
+  .port__drop { position: relative; display: inline; }
+  .port__drop__content { position: absolute; background-color: $white; box-shadow: 0 0.5em 1em 0 rgba(0,0,0,0.2); padding: 0.75em 1em; z-index: 2; right: -4em; top: 2em; transition: all ease .6s; width: 13em;
+    @include respond($ls-mobile){ position: relative; background-color: none; box-shadow: none; padding: 0; left: 0; top: 0; right: 0; width: 100%; font-size: 0.75em; }
+    li { display: block; }
+    li:hover { boder: none; }
+  }
+}

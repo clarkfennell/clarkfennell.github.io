@@ -1,0 +1,75 @@
+// Content SCSS
+.left_lean { margin: 3em auto;
+  .left { width: 29.5%; }
+  .right { width: 69.5%; padding: 3% 0 0 1%; }
+  .lean__pic:before { right: 1em; }
+}
+.right_lean { margin: 3em auto;
+  .right { width: 29.5%; }
+  .left { width: 69.5%; padding: 1% 0 0 1%; }
+  .lean__pic:before { left: 1em; }
+}
+.right_lean, .left_lean { display: flex;
+  @include respond($ls-mobile){ display: block; }
+  .right, .left { display: inline-block; position: relative;
+    @include respond($tablet){ width: 50%; }
+    @include respond($ls-mobile) { width: 100%; display: block; margin: 1em auto; }
+  }
+  .lean__pic { cursor: pointer; border-radius: 1em;
+    a { height: 100%; width: 100%; display: block; position: relative; z-index: 2; }
+  }
+  .lean__pic:before { height: 100%; width: 100%; background-color: $shadows; content: '';  position: absolute; top: 1em; z-index: -1; border-radius: 1em; }
+  .thorn { background: url('/_assets/core-images/images/Thornberry.png'); background-position: 50%; background-size: cover; height: 15em; border: $shadows solid 0.075em; }
+  .pma { background: url('/_assets/core-images/images/PMA.png'); background-position: 50%; background-size: cover; height: 15em; }
+  .pryor { background: url('/_assets/core-images/images/Pryor.png'); background-position: 50%; background-size: cover; height: 15em; }
+  .andy { background: url('/_assets/core-images/images/andyhanselman.png'); background-position: 50%; background-size: cover; height: 15em; }
+  .hydravid { background: url('/_assets/core-images/images/hydravideoteam.png'); background-position: 50%; background-size: cover; height: 15em; }
+}
+.left_lean:hover {
+  .lean__pic:before{ height: 100%; width: 100%; background-color: $silver; content: '';  position: absolute; top: 0; right: 0; z-index: -1; transition: all ease 2s; border-radius: 1em; }
+}
+.right_lean:hover {
+  .lean__pic:before{ height: 100%; width: 100%; background-color: $silver; content: '';  position: absolute; top: 0; left: 0; z-index: -1; transition: all ease 2s; borborder-radius: 1em; }
+}
+.lean__txt {
+  @include respond($ls-mobile){ border-bottom: $silver 0.075em solid;
+    p { padding-bottom: 2em; }
+  }
+}
+.small__print {
+  font-size: $fs-body*.5;
+}
+.progress { position: relative;
+  svg { height: auto; width: 100%; }
+  span { position: absolute; text-align: center; left: 0%; right: 0%; top: 50%; font-size: $fs-reg; font-family: $ff-reg; }
+}
+.opacity { display: none; transition: all ease 6s; }
+.trgr__container { display: block; margin: auto auto 7em; text-align: center; height: 5em;
+  .trgr {height: auto; @include grid(6, 2.5%); float: left; display:inline-block;
+    @include respond($tablet){ @include grid(3, 2.5%); margin: 1em auto; }
+    @include respond($ls-mobile){ @include grid(2, 2.5%); }
+    img { width: 5em; height: auto;
+      @include respond($tablet){ width: 3em; }
+      @include respond($ls-mobile){ margin: 1em 0; }
+    }
+  }
+}
+.trgr__box { text-align: center; margin: auto; }
+.main__spalsh { background-color: $white; height: 100%; min-height: 100vh; width: 100%; position: absolute; z-index: 5; top: 0; left: 0; transition: all ease 2s;
+  img { background-color: $grey; border-radius: 50%; margin: auto; margin-top: 2em; display: block; }
+  h1, span, a { text-decoration: none; transition: all ease .6s; text-align: center; display: block; }
+  h1 { font-size: $fs-large; color: $blue; margin: 0.5em auto 0; }
+  span, a, p { font-size: $fs-reg; margin: 0.5em auto; display: block; }
+  span { color: $blue; }
+  p { color: $red; text-align: center; }
+  a { color: $green; }
+  &.clicked { background-color: transparent; transition: all ease 2s;
+    h1, span, a, p { display: none; color: transparent; transition: all ease 2s; }
+    img { height: 10em; margin-top: 1em; transition: all ease 2s; }
+  }
+}
+.my__pic { @include respond($ls-mobile){
+  margin-top: 2em;
+}
+  img { border-radius: 1em; }
+}
