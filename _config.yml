@@ -17,8 +17,8 @@ title: Clark Fennell's Portfolio Website
 email: clarkfennell@mac.com
 description: >- # this means to ignore newlines until "baseurl:"
   Software/Web Developer - Using HTML/CSS/SCSS/JAVASCRIPT/JQUERY/VUE/REACT/GIT and many more to service all of your deigital needs!
-baseurl: "https://clarkfennell.github.io" # the subpath of your site, e.g. /blog
-url: '' # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: '' # the subpath of your site, e.g. /blog
+url: 'https://clarkfennell.github.io' # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
