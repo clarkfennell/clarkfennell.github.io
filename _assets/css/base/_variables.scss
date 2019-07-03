@@ -23,7 +23,10 @@ $fs-head: 3.75em;
 //Fonts
 @font-face {
   font-family: "Comfortaa-Bold";
-  src: url("/fonts/Comfortaa/Comfortaa-Bold.eot?#iefix") format("eot"), url("/fonts/Comfortaa/Comfortaa-Bold.woff2") format("woff2"), url("/fonts/Comfortaa/Comfortaa-Bold.woff") format("woff"), url("/fonts/Comfortaa/Comfortaa-Bold.tff") format("truetype");
+  src: url("/fonts/Comfortaa/Comfortaa-Bold.eot?#iefix") format("eot"),
+       url("/fonts/Comfortaa/Comfortaa-Bold.woff2") format("woff2"), 
+       url("/fonts/Comfortaa/Comfortaa-Bold.woff") format("woff"),
+       url("/fonts/Comfortaa/Comfortaa-Bold.tff") format("truetype");
 }
 @font-face {
   font-family: "Comfortaa-Regular";
@@ -41,7 +44,7 @@ $fs-head: 3.75em;
 $ff-h-reg: "Comfortaa-Regular";
 $ff-h-bold: "Comfortaa-Bold";
 $ff-bold: "Roboto-Bold";
-$ff-reg: "";
+$ff-reg: "Roboto-Regular";
 //Padding
 $sml-pad: 2.5em;
 $big-pad: 5em;
