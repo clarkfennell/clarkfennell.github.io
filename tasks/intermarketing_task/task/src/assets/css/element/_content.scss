@@ -3,16 +3,16 @@
         span { font-weight: bold; }
         p { line-height: 3em; font-size: $fs-body; }
     }
-    .remaining:after { width: 0; height: 0; border-left: 0.5em solid transparent; border-right: 0.5em solid transparent; border-top: 0.5em solid $dark-grey; content: ''; position: relative; top: 0.5em; left: 6em; }
-    .progress { width: 100%; background: $white; height: 0.8em; margin-top: 0.5em; border-bottom: none;
+    .remaining:after { width: 0; height: 0; border-left: 1em solid transparent; border-right: 1em solid transparent; border-top: 1em solid $dark-grey; content: ''; position: relative; top: 1em; left: 6em; }
+    .progress { width: 100%; background: $white; height: 0.8em; margin-top: 1em; border-bottom: none;
         .progressFill { background: $orange; width: 50%; float: left; margin: 0; height: 0.8em; }
     }
-    .charity { width: auto; height: 15em; padding: 2em; text-align: left;
+    .charity { width: auto; height: 15em; padding: 2em; text-align: left; position: relative;
         .input { height: 3em; vertical-align: top; position: relative; }
-        input[type=text], input[type=submit] { margin: 1em 0em; display: inline-block; width: 47%; font-size: $fs-small; text-align: center; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;  letter-spacing: 0.05em; line-height: 1; }
-        input[type=text] { float: left; text-align: left; padding: 0.75em 1.25em; font-weight: bold; vertical-align: middle; }
+        input[type=number], input[type=submit] { margin: 1em 0em; display: inline-block; width: 47%; font-size: $fs-small; text-align: center; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;  letter-spacing: 0.05em; line-height: 1; height: 3em; padding-left: 1.25em; }
+        input[type=number] { float: left; text-align: left; font-weight: bold; vertical-align: middle; }
         input[type=submit] { float: right; }
-        .currancy:before { content: '$'; position: absolute; left: 0.75em; top: 1em; display: inline-block; font-size: 1.25em; font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif; font-weight: bold; color: $dark-grey; opacity: 0.75; vertical-align: middle; margin: 1em 0; }
+        label { position: absolute; font-size: 1.25em; font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif; font-weight: bold; color: $dark-grey; opacity: 0.75; top: 2em; left: 0.75em; }
     }
 }
 .main > div { border: solid $light-grey 0.0125em; display: block; margin: 0 auto; }

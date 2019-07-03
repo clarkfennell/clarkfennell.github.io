@@ -374,7 +374,7 @@ html, body {
 .btn {
   border: solid #eaeaea 0.075em;
   border-radius: 0.25em;
-  color: #777;
+  color: #424242;
   font-size: 1em;
   display: inline-block;
   background: #fff;
@@ -409,11 +409,11 @@ html, body {
   font-size: 0.9em;
   letter-spacing: 0.1em;
   line-height: 1.4;
-  color: #777;
+  color: #424242;
 }
 
 .main .remaining {
-  background: #777;
+  background: #424242;
   color: #fff;
   height: 3em;
 }
@@ -430,12 +430,12 @@ html, body {
 .main .remaining:after {
   width: 0;
   height: 0;
-  border-left: 0.5em solid transparent;
-  border-right: 0.5em solid transparent;
-  border-top: 0.5em solid #777;
+  border-left: 1em solid transparent;
+  border-right: 1em solid transparent;
+  border-top: 1em solid #424242;
   content: '';
   position: relative;
-  top: 0.5em;
+  top: 1em;
   left: 6em;
 }
 
@@ -443,7 +443,7 @@ html, body {
   width: 100%;
   background: #fff;
   height: 0.8em;
-  margin-top: 0.5em;
+  margin-top: 1em;
   border-bottom: none;
 }
 
@@ -460,6 +460,7 @@ html, body {
   height: 15em;
   padding: 2em;
   text-align: left;
+  position: relative;
 }
 
 .main .charity .input {
@@ -468,7 +469,7 @@ html, body {
   position: relative;
 }
 
-.main .charity input[type=text], .main .charity input[type=submit] {
+.main .charity input[type=number], .main .charity input[type=submit] {
   margin: 1em 0em;
   display: inline-block;
   width: 47%;
@@ -478,12 +479,13 @@ html, body {
   box-sizing: border-box;
   letter-spacing: 0.05em;
   line-height: 1;
+  height: 3em;
+  padding-left: 1.25em;
 }
 
-.main .charity input[type=text] {
+.main .charity input[type=number] {
   float: left;
   text-align: left;
-  padding: 0.75em 1.25em;
   font-weight: bold;
   vertical-align: middle;
 }
@@ -492,22 +494,15 @@ html, body {
   float: right;
 }
 
-.main .charity .currancy {
+.main .charity label {
   position: absolute;
-}
-
-.main .charity .currancy:before {
-  content: '$';
-  position: absolute;
-  left: 0.75em;
-  top: 1em;
-  display: inline-block;
   font-size: 1.25em;
   font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
   font-weight: bold;
-  color: #777;
+  color: #424242;
   opacity: 0.75;
-  margin: 1em 0;
+  top: 2em;
+  left: 0.75em;
 }
 
 .main > div {

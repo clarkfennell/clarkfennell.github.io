@@ -13,10 +13,9 @@
         <br/>
         Join the <strong>42</strong> others donors who have already supported this project. Every dollar helps.</p>
         <div class="input">
-          <span class="currancy">
-            <input type="text" placeholder="50" />
-          </span>
-          <input type="submit" class="btn green" value="Give Now" />
+          <label for="money">$</label>
+          <input type="number" id="money" placeholder="50" />
+          <input type="submit" class="btn green" id="giveBtn" value="Give Now" />
         </div>
         <a class="blue">Why give $50?</a>
       </div>
@@ -27,11 +26,33 @@
 </template>
 
 <script>
+window.$ = require('jquery')
+window.JQuery = require('jquery')
+
 export default {
   name: "app"
 };
+$(document).ready(function() {
+  var totalNeeded = 1000;
+  var totalAqquired = 0;
+  
+  var remainTotal = totalNeeded - totalAqquired;
+  $('#remainTotal').text("£" + Number(remainTotal));
+
+  var remainPercent = 100 - ((remainTotal/totalNeeded)*100);
+  $('.progressFill').css("width", Number(remainPercent) + "%");
+
+  $('#giveBtn').on('click', function(){
+    var money = $('#money').val();
+    totalAqquired = Number(totalAqquired) + Number(money);
+    var remainTotal = totalNeeded - totalAqquired;
+    $('#remainTotal').text(Number(remainTotal));
+    var remainPercent = 100 - ((remainTotal/totalNeeded)*100);
+    $('.progressFill').css("width", Number(remainPercent) + "%");
+  })
+})
 </script>
 
 <style>
-@import './assets/css/main.css';
+@import './assets/css/main.min.css';
 </style>
