@@ -2041,6 +2041,12 @@ main {
   transition: all ease 0.6s;
 }
 
+@media (max-width: 41.25em) {
+  .container .lean .lean_left h1, .container .lean .lean_right h1 {
+    font-size: 4em;
+  }
+}
+
 .container .lean .lean_left h1:hover, .container .lean .lean_right h1:hover {
   text-shadow: none;
   -webkit-transition: all ease 0.6s;
