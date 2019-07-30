@@ -2048,6 +2048,10 @@ main {
           order: 2;
 }
 
+.container .lean a {
+  font-weight: bolder;
+}
+
 .container:last-of-type {
   padding-bottom: 0;
 }
