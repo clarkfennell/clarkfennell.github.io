@@ -1,5 +1,11 @@
 // Content SCSS
-
+.container { padding: 0 0 $sml-pad;
+  .lean { width: 100%; display: block;
+    .lean_left, .lean_right { width: 50%; display: inline-flex; }
+    .lean_left { }
+  }
+}
+.container:last-of-type { padding-bottom: 0; }
 .progress { position: relative;
   svg { height: auto; width: 100%; }
   span { position: absolute; text-align: center; left: 0%; right: 0%; top: 50%; font-size: $fs-reg; font-family: $ff-reg; }

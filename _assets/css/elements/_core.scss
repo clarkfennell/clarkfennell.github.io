@@ -125,7 +125,7 @@ h3, h4, h5, h6 {
     h3, h4, h5, h6 {
       font-size: $fs-small; } }
 
-main { display: inline-block; width: 100%; vertical-align: top; height: auto; margin: 0 auto; padding: $big-pad $sml-pad; }
+main { display: inline-block; width: 100%; vertical-align: top; height: auto; margin: 0 auto; padding: $sml-pad $sml-pad $big-pad; }
 .left { float: left; }
 .right { float: right; }
 .overflow-y { overflow-y: hidden; }
