@@ -1,5 +1,6 @@
 // Content SCSS
 .container { padding: 0 0 $sml-pad;
+  &.first { @include respond($ls-mobile){ padding-top: $sml-pad; }}
   .lean { width: 100%; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: center; align-items: center; align-content: flex-start;
     @include respond($ls-mobile){ flex-direction: column; }
     .lean_left, .lean_right { display: inline;
@@ -14,7 +15,6 @@
   }
 }
 .container:last-of-type { padding-bottom: 0; }
-.container:first-of-type { @include respond($ls-mobile){ padding-top: $sml-pad; }}
 .progress { position: relative;
   svg { height: auto; width: 100%; }
   span { position: absolute; text-align: center; left: 0%; right: 0%; top: 50%; font-size: $fs-reg; font-family: $ff-reg; }

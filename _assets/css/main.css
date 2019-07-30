@@ -1995,6 +1995,12 @@ main {
   padding: 0 0 2.5em;
 }
 
+@media (max-width: 41.25em) {
+  .container.first {
+    padding-top: 2.5em;
+  }
+}
+
 .container .lean {
   width: 100%;
   display: -webkit-box;
@@ -2085,12 +2091,6 @@ main {
 
 .container:last-of-type {
   padding-bottom: 0;
-}
-
-@media (max-width: 41.25em) {
-  .container:first-of-type {
-    padding-top: 2.5em;
-  }
 }
 
 .progress {
