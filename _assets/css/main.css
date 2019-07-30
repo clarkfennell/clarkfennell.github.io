@@ -1692,7 +1692,7 @@ p, q {
   width: 100%;
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 41.25em) {
   p, q {
     font-size: .875em;
   }
@@ -1768,13 +1768,13 @@ h1 {
   font-weight: normal;
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 41.25em) {
   h1 {
     font-size: 3.51562em;
   }
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 41.25em) {
   h1 {
     font-size: 2.8125em;
   }
@@ -1802,7 +1802,7 @@ h3, h4, h5, h6 {
   font-weight: normal;
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 41.25em) {
   h3, h4, h5, h6 {
     font-size: 1.35em;
   }
@@ -1883,7 +1883,7 @@ main {
   padding-bottom: 2.5em;
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 41.25em) {
   .sml-pad-bot {
     padding: 0;
   }
@@ -1893,7 +1893,7 @@ main {
   padding-bottom: 5em;
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 41.25em) {
   .pad-bot {
     padding-bottom: 3em;
   }
@@ -1952,7 +1952,7 @@ main {
   }
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 41.25em) {
   .grid.four .item {
     width: 100%;
   }
@@ -1979,7 +1979,7 @@ main {
   margin-right: 0;
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 41.25em) {
   .grid.two .item {
     width: 100%;
   }
@@ -2016,6 +2016,15 @@ main {
       align-content: flex-start;
 }
 
+@media (max-width: 41.25em) {
+  .container .lean {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .container .lean .lean_left, .container .lean .lean_right {
   display: inline;
 }
@@ -2038,6 +2047,12 @@ main {
   transition: all ease 0.6s;
 }
 
+@media (min-width: 41.25em) and (max-width: 64em) {
+  .container .lean .lean_left .js, .container .lean .lean_right .js {
+    font-size: 3em;
+  }
+}
+
 .container .lean .lean_left {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
@@ -2048,6 +2063,14 @@ main {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
+}
+
+@media (max-width: 41.25em) {
+  .container .lean .lean_right {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
 }
 
 .container .lean a {
@@ -2117,7 +2140,7 @@ main {
   }
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 41.25em) {
   .trgr__container .trgr {
     width: 48.75%;
   }
@@ -2140,7 +2163,7 @@ main {
   }
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 41.25em) {
   .trgr__container .trgr img {
     margin: 1em 0;
   }
@@ -2225,7 +2248,7 @@ main {
   transition: all ease 2s;
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 41.25em) {
   .my__pic {
     margin-top: 2em;
   }
@@ -2266,7 +2289,7 @@ header .nav {
   padding-bottom: 0.5em;
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 41.25em) {
   header .nav {
     display: none;
   }
@@ -2289,7 +2312,7 @@ header .nav a:hover {
   font-weight: bolder;
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 41.25em) {
   header .nav li {
     display: block;
     padding: 0.5em;
@@ -2327,7 +2350,7 @@ header .menu__contact {
   text-align: center;
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 41.25em) {
   header .menu__contact {
     display: none;
   }
@@ -2344,7 +2367,7 @@ header .hamburger {
   display: none;
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 41.25em) {
   header .hamburger {
     display: block;
     margin: auto;
@@ -2370,7 +2393,7 @@ header .port__drop__content {
   width: 13em;
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 41.25em) {
   header .port__drop__content {
     position: relative;
     background-color: none;
@@ -2390,7 +2413,7 @@ header .port__drop__content li {
 }
 
 header .port__drop__content li:hover {
-  boder: none;
+  border: none;
 }
 
 footer {
@@ -2404,7 +2427,7 @@ footer {
   font-family: "Roboto-Regular";
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 41.25em) {
   footer {
     font-size: 0.75em;
   }
@@ -2472,7 +2495,7 @@ footer .policy_ftr li {
   font-size: 0.65em;
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 41.25em) {
   footer .policy_ftr li {
     padding-right: 2em;
   }
