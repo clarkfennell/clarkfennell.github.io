@@ -1685,6 +1685,7 @@ ol {
 
 p, q {
   line-height: 135%;
+  font-family: "Roboto-Regular";
   font-size: 1em;
   display: inline-block;
   vertical-align: top;
@@ -1813,7 +1814,7 @@ main {
   vertical-align: top;
   height: auto;
   margin: 0 auto;
-  padding: 5em 2.5em;
+  padding: 2.5em 2.5em 5em;
 }
 
 .left {
@@ -1990,170 +1991,49 @@ main {
   }
 }
 
-.left_lean {
-  margin: 3em auto;
+.container {
+  padding: 0 0 2.5em;
 }
 
-.left_lean .left {
-  width: 29.5%;
-}
-
-.left_lean .right {
-  width: 69.5%;
-  padding: 3% 0 0 1%;
-}
-
-.left_lean .lean__pic:before {
-  right: 1em;
-}
-
-.right_lean {
-  margin: 3em auto;
-}
-
-.right_lean .right {
-  width: 29.5%;
-}
-
-.right_lean .left {
-  width: 69.5%;
-  padding: 1% 0 0 1%;
-}
-
-.right_lean .lean__pic:before {
-  left: 1em;
-}
-
-.right_lean, .left_lean {
+.container .lean {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
 }
 
-@media (max-width: 37.5em) {
-  .right_lean, .left_lean {
-    display: block;
-  }
+.container .lean .lean_left, .container .lean .lean_right {
+  width: 50%;
 }
 
-.right_lean .right, .right_lean .left, .left_lean .right, .left_lean .left {
-  display: inline-block;
-  position: relative;
+.container .lean .lean_left {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 
-@media (max-width: 48em) {
-  .right_lean .right, .right_lean .left, .left_lean .right, .left_lean .left {
-    width: 50%;
-  }
+.container .lean .lean_right {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }
 
-@media (max-width: 37.5em) {
-  .right_lean .right, .right_lean .left, .left_lean .right, .left_lean .left {
-    width: 100%;
-    display: block;
-    margin: 1em auto;
-  }
-}
-
-.right_lean .lean__pic, .left_lean .lean__pic {
-  cursor: pointer;
-  border-radius: 1em;
-}
-
-.right_lean .lean__pic a, .left_lean .lean__pic a {
-  height: 100%;
-  width: 100%;
-  display: block;
-  position: relative;
-  z-index: 2;
-}
-
-.right_lean .lean__pic:before, .left_lean .lean__pic:before {
-  height: 100%;
-  width: 100%;
-  background-color: #ada9b7;
-  content: '';
-  position: absolute;
-  top: 1em;
-  z-index: -1;
-  border-radius: 1em;
-}
-
-.right_lean .thorn, .left_lean .thorn {
-  background: url("/_assets/core-images/images/Thornberry.png");
-  background-position: 50%;
-  background-size: cover;
-  height: 15em;
-  border: #ada9b7 solid 0.075em;
-}
-
-.right_lean .pma, .left_lean .pma {
-  background: url("/_assets/core-images/images/PMA.png");
-  background-position: 50%;
-  background-size: cover;
-  height: 15em;
-}
-
-.right_lean .pryor, .left_lean .pryor {
-  background: url("/_assets/core-images/images/Pryor.png");
-  background-position: 50%;
-  background-size: cover;
-  height: 15em;
-}
-
-.right_lean .andy, .left_lean .andy {
-  background: url("/_assets/core-images/images/andyhanselman.png");
-  background-position: 50%;
-  background-size: cover;
-  height: 15em;
-}
-
-.right_lean .hydravid, .left_lean .hydravid {
-  background: url("/_assets/core-images/images/hydravideoteam.png");
-  background-position: 50%;
-  background-size: cover;
-  height: 15em;
-}
-
-.left_lean:hover .lean__pic:before {
-  height: 100%;
-  width: 100%;
-  background-color: #c4aeb7;
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: -1;
-  -webkit-transition: all ease 2s;
-  transition: all ease 2s;
-  border-radius: 1em;
-}
-
-.right_lean:hover .lean__pic:before {
-  height: 100%;
-  width: 100%;
-  background-color: #c4aeb7;
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  -webkit-transition: all ease 2s;
-  transition: all ease 2s;
-  borborder-radius: 1em;
-}
-
-@media (max-width: 37.5em) {
-  .lean__txt {
-    border-bottom: #c4aeb7 0.075em solid;
-  }
-  .lean__txt p {
-    padding-bottom: 2em;
-  }
-}
-
-.small__print {
-  font-size: 0.5em;
+.container:last-of-type {
+  padding-bottom: 0;
 }
 
 .progress {

@@ -1,8 +1,9 @@
 // Content SCSS
 .container { padding: 0 0 $sml-pad;
-  .lean { width: 100%; display: block;
-    .lean_left, .lean_right { width: 50%; display: inline-flex; }
-    .lean_left { }
+  .lean { width: 100%; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: center; align-items: center; align-content: flex-start;
+    .lean_left, .lean_right { width: 50%; }
+    .lean_left { order: 1; }
+    .lean_right { order: 2; }
   }
 }
 .container:last-of-type { padding-bottom: 0; }
