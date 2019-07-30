@@ -1,44 +1,5 @@
 // Content SCSS
-.left_lean { margin: 3em auto;
-  .left { width: 29.5%; }
-  .right { width: 69.5%; padding: 3% 0 0 1%; }
-  .lean__pic:before { right: 1em; }
-}
-.right_lean { margin: 3em auto;
-  .right { width: 29.5%; }
-  .left { width: 69.5%; padding: 1% 0 0 1%; }
-  .lean__pic:before { left: 1em; }
-}
-.right_lean, .left_lean { display: flex;
-  @include respond($ls-mobile){ display: block; }
-  .right, .left { display: inline-block; position: relative;
-    @include respond($tablet){ width: 50%; }
-    @include respond($ls-mobile) { width: 100%; display: block; margin: 1em auto; }
-  }
-  .lean__pic { cursor: pointer; border-radius: 1em;
-    a { height: 100%; width: 100%; display: block; position: relative; z-index: 2; }
-  }
-  .lean__pic:before { height: 100%; width: 100%; background-color: $shadows; content: '';  position: absolute; top: 1em; z-index: -1; border-radius: 1em; }
-  .thorn { background: url('/_assets/core-images/images/Thornberry.png'); background-position: 50%; background-size: cover; height: 15em; border: $shadows solid 0.075em; }
-  .pma { background: url('/_assets/core-images/images/PMA.png'); background-position: 50%; background-size: cover; height: 15em; }
-  .pryor { background: url('/_assets/core-images/images/Pryor.png'); background-position: 50%; background-size: cover; height: 15em; }
-  .andy { background: url('/_assets/core-images/images/andyhanselman.png'); background-position: 50%; background-size: cover; height: 15em; }
-  .hydravid { background: url('/_assets/core-images/images/hydravideoteam.png'); background-position: 50%; background-size: cover; height: 15em; }
-}
-.left_lean:hover {
-  .lean__pic:before{ height: 100%; width: 100%; background-color: $silver; content: '';  position: absolute; top: 0; right: 0; z-index: -1; transition: all ease 2s; border-radius: 1em; }
-}
-.right_lean:hover {
-  .lean__pic:before{ height: 100%; width: 100%; background-color: $silver; content: '';  position: absolute; top: 0; left: 0; z-index: -1; transition: all ease 2s; borborder-radius: 1em; }
-}
-.lean__txt {
-  @include respond($ls-mobile){ border-bottom: $silver 0.075em solid;
-    p { padding-bottom: 2em; }
-  }
-}
-.small__print {
-  font-size: $fs-body*.5;
-}
+
 .progress { position: relative;
   svg { height: auto; width: 100%; }
   span { position: absolute; text-align: center; left: 0%; right: 0%; top: 50%; font-size: $fs-reg; font-family: $ff-reg; }
