@@ -2081,6 +2081,12 @@ main {
   padding-bottom: 0;
 }
 
+@media (max-width: 41.25em) {
+  .container:first-of-type {
+    padding-top: 2.5em;
+  }
+}
+
 .progress {
   position: relative;
 }
@@ -2413,7 +2419,7 @@ header .port__drop__content li {
 }
 
 header .port__drop__content li:hover {
-  border: none;
+  boder: none;
 }
 
 footer {
