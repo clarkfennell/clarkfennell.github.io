@@ -1,7 +1,10 @@
 // Content SCSS
 .container { padding: 0 0 $sml-pad;
   .lean { width: 100%; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: center; align-items: center; align-content: flex-start;
-    .lean_left, .lean_right { width: 50%; }
+    .lean_left, .lean_right { display: inline;
+      p { text-align: justify; }
+      h1 { width: 100%; text-shadow: 2px 2px 2px rgba(173,169,183,0); }
+    }
     .lean_left { order: 1; }
     .lean_right { order: 2; }
   }
@@ -13,7 +16,7 @@
 }
 .opacity { display: none; transition: all ease 6s; }
 .trgr__container { display: block; margin: auto auto 7em; text-align: center; height: 5em;
-  .trgr {height: auto; @include grid(6, 2.5%); float: left; display:inline-block;
+  .trgr {height: auto; @include grid(6, 2.5%); float: left;
     @include respond($tablet){ @include grid(3, 2.5%); margin: 1em auto; }
     @include respond($ls-mobile){ @include grid(2, 2.5%); }
     img { width: 5em; height: auto;

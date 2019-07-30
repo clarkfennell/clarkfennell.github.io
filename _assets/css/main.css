@@ -2017,7 +2017,16 @@ main {
 }
 
 .container .lean .lean_left, .container .lean .lean_right {
-  width: 50%;
+  display: inline;
+}
+
+.container .lean .lean_left p, .container .lean .lean_right p {
+  text-align: justify;
+}
+
+.container .lean .lean_left h1, .container .lean .lean_right h1 {
+  width: 100%;
+  text-shadow: 2px 2px 2px rgba(173, 169, 183, 0);
 }
 
 .container .lean .lean_left {
@@ -2072,7 +2081,6 @@ main {
   height: auto;
   width: 14.58333%;
   float: left;
-  display: inline-block;
 }
 
 .trgr__container .trgr:nth-child(n) {
