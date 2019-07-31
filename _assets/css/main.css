@@ -2059,7 +2059,7 @@ main {
   transition: all ease 0.6s;
 }
 
-@media (min-width: 41.25em) and (max-width: 64em) {
+@media (max-width: 64em) {
   .container .lean .lean_left .js, .container .lean .lean_right .js {
     font-size: 3em;
   }
